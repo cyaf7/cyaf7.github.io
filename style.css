@@ -70,3 +70,24 @@ a:hover{text-decoration:underline}
 @media (max-width:920px){
   .card.half{grid-column:span 12}
 }
+
+/* ======== VIDEO SECTION ======== */
+.video-wrap {
+  position: relative;
+  max-width: 900px;         /* largura máxima do player */
+  margin: 0 auto;           /* centraliza */
+  aspect-ratio: 16 / 9;     
+  background: #0e161c;      /* cor de fundo enquanto carrega */
+  border-radius: 12px;      /* bordas arredondadas */
+  overflow: hidden;         /* evita barra de rolagem no iframe */
+  box-shadow: 0 8px 26px rgba(0, 229, 168, 0.15); /* sombra leve cyber */
+}
+
+.video-frame {
+  position: absolute;
+  inset: 0;                /* ocupa toda a área do container */
+  width: 100%;
+  height: 100%;
+  border: none;            /* remove borda do iframe */
+}
+
