@@ -1,0 +1,72 @@
+:root{
+  --bg:#0b0f12; --card:#11171d;
+  --muted:#9aa9b5; --text:#e6eef5;
+  --accent:#00e5a8; --accent-2:#66a6ff;
+  --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(0,229,168,.08), transparent 60%),
+    radial-gradient(800px 500px at -10% 20%, rgba(102,166,255,.08), transparent 60%),
+    var(--bg);
+  line-height:1.6;
+}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1120px; margin:0 auto; padding:24px}
+
+/* Header */
+.site-header{display:flex; flex-direction:column; align-items:center; gap:10px; padding:22px 0 4px}
+.avatar{
+  width:110px; height:110px; object-fit:cover;
+  border-radius:50%;                /* 🔵 deixa redondo */
+  background:#0e161c; border:2px solid rgba(255,255,255,.12);
+  box-shadow:var(--shadow)
+}
+.site-name{margin:10px 0 0; font-size:28px; letter-spacing:.2px; font-weight:700}
+.site-tagline{margin:4px 0 14px; color:var(--muted); font-size:14px}
+.nav{display:flex; gap:12px; flex-wrap:wrap; justify-content:center}
+.nav-btn{padding:8px 12px; border-radius:999px; background:#131a21; border:1px solid rgba(255,255,255,.06); color:var(--text)}
+.nav-btn:hover{border-color:rgba(255,255,255,.14)}
+
+/* Sections */
+.section{padding:34px 0}
+.section-title{display:flex; align-items:center; gap:10px; margin:0 0 16px; font-size:14px; letter-spacing:.4px; color:var(--muted); text-transform:uppercase}
+.section-title .dot{width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 16px var(--accent)}
+.lead{color:var(--muted); font-size:15.5px}
+
+/* CTA Buttons */
+.cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:12px}
+.btn{
+  display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(180deg, #121a21, #0f161c); color:var(--text); font-weight:600; box-shadow:var(--shadow)
+}
+.btn:hover{border-color:rgba(255,255,255,.18); transform:translateY(-1px)}
+.ghost{background:transparent}
+
+/* Skills */
+.skills{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:14px}
+.pill{display:flex; justify-content:space-between; align-items:center; gap:10px; padding:10px 12px; border-radius:12px; background:#0f151b; border:1px solid rgba(255,255,255,.06)}
+.pill span{color:var(--muted); font-size:14px}
+
+/* Cards */
+.cards{display:grid; grid-template-columns:repeat(12, 1fr); gap:18px}
+.card{grid-column:span 12; background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); transition:.2s ease}
+.card:hover{transform:translateY(-2px); border-color:rgba(255,255,255,.14)}
+.card h3{margin:0 0 6px; font-size:18px}
+.card p{margin:0 0 10px; color:var(--muted); font-size:14.5px}
+.card .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:6px}
+.tag{font-size:12px; padding:4px 8px; border-radius:999px; background:#0e161c; border:1px solid rgba(255,255,255,.06); color:#b9c7d3}
+.card.half{grid-column:span 6}
+
+/* Footer */
+.footer{padding:28px 0 40px; color:var(--muted); font-size:14px; text-align:center}
+
+/* Responsive */
+@media (max-width:920px){
+  .card.half{grid-column:span 12}
+}
