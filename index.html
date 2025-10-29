@@ -1,1 +1,128 @@
-n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Camilly Aoki • Cybersecurity Portfolio</title>
+  <meta name="description" content="Blue Team in progress. SOC labs and notes documented on GitBook." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <img class="avatar" src="profile.jpeg" alt="Camilly Aoki portrait" />
+
+      <h1 class="site-name">Camilly Aoki</h1>
+      <p class="site-tagline">Cybersecurity • Blue Team in progress</p>
+
+      <nav class="nav">
+        <a href="#about" class="nav-btn">About</a>
+        <a href="#skills" class="nav-btn">Skills</a>
+        <a href="#projects" class="nav-btn">Projects</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </nav>
+    </header>
+
+    <!-- my about -->
+    <section id="about" class="section">
+      <h2 class="section-title"><span class="dot"></span> About Me</h2>
+      <p class="lead">
+        Second-year student in <strong>Network Systems Administration</strong> with a focus on Cybersecurity (ASIX).
+        I started with <strong>Web Development (Le&nbsp;Wagon bootcamp)</strong>, which gave me useful foundations,
+        but cybersecurity is where I feel engaged — practical, investigative, meaningful.
+      </p>
+      <p>
+        Currently training for <strong>Blue Team / SOC</strong> roles (<strong>BTL1</strong> in progress).
+        I keep a living record of my learning — labs, notes and experiments — on <strong>GitBook</strong>.
+        Self-taught, persistent and hands-on: I break problems down, solve them and document my progress.
+      </p>
+      <div class="cta">
+        <a class="btn" href="https://github.com/cyaf7" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/camilly-yumi-aoki-183603361/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="REPLACE_WITH_GITBOOK" target="_blank" rel="noreferrer">GitBook</a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title"><span class="dot"></span> Skills</h2>
+      <div class="skills">
+        <div class="pill"><strong>Blue Team / SOC</strong><span>logs, triage, detections</span></div>
+        <div class="pill"><strong>Linux</strong><span>daily use • fundamentals</span></div>
+        <div class="pill"><strong>Networking</strong><span>TCP/IP • DNS • routing</span></div>
+        <div class="pill"><strong>Nmap</strong><span>scanning & service enum</span></div>
+        <div class="pill"><strong>Wireshark</strong><span>traffic analysis</span></div>
+        <div class="pill"><strong>Phishing analysis</strong><span>headers • IOCs</span></div>
+        <div class="pill"><strong>Splunk</strong><span>search • dashboards</span></div>
+        <div class="pill"><strong>TryHackMe</strong><span>structured labs</span></div>
+        <div class="pill"><strong>VM Labs</strong><span>safe offensive basics</span></div>
+        <div class="pill"><strong>Documentation</strong><span>GitBook notes</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-title"><span class="dot"></span> Projects (GitBook)</h2>
+      <div class="cards">
+
+        <article class="card half">
+          <h3>Blue Team Lab: Log Analysis & Detections</h3>
+          <p>SOC practice: triage workflow, queries, and detection tuning. Full write-up on GitBook.</p>
+          <div class="tags"><span class="tag">Blue Team</span><span class="tag">SOC</span><span class="tag">Splunk</span></div>
+          <p><a href="REPLACE_GITBOOK_LAB_1" target="_blank" rel="noreferrer">Open lab →</a></p>
+        </article>
+
+        <article class="card half">
+          <h3>Network Forensics: PCAP & Wireshark</h3>
+          <p>Packet captures, filters and protocol insights. From hypothesis to findings with screenshots.</p>
+          <div class="tags"><span class="tag">Wireshark</span><span class="tag">PCAP</span><span class="tag">DNS/HTTP</span></div>
+          <p><a href="REPLACE_GITBOOK_LAB_2" target="_blank" rel="noreferrer">Open lab →</a></p>
+        </article>
+
+        <article class="card half">
+          <h3>Nmap Scanning & Service Enumeration</h3>
+          <p>Recon in lab VMs. Scan profiles, scripts, and service/version insights. Notes and commands included.</p>
+          <div class="tags"><span class="tag">Nmap</span><span class="tag">Enum</span><span class="tag">VM</span></div>
+          <p><a href="REPLACE_GITBOOK_LAB_3" target="_blank" rel="noreferrer">Open lab →</a></p>
+        </article>
+
+        <article class="card half">
+          <h3>Threat Emulation: TryHackMe Notes</h3>
+          <p>Rooms that support defensive learning: what to detect, how to detect, and why.</p>
+          <div class="tags"><span class="tag">TryHackMe</span><span class="tag">Purple mindset</span></div>
+          <p><a href="REPLACE_GITBOOK_LAB_4" target="_blank" rel="noreferrer">Open lab →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title"><span class="dot"></span> Contact</h2>
+      <div class="cards">
+        <article class="card">
+          <p>Focused on Blue Team now and growing toward a future Purple Team role. If you want to see my labs or collaborate, feel free to reach out.</p>
+          <div class="tags">
+            <a class="tag" href="REPLACE_WITH_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="tag" href="REPLACE_WITH_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="tag" href="REPLACE_WITH_GITBOOK" target="_blank" rel="noreferrer">GitBook</a>
+            <a class="tag" href="mailto:REPLACE_WITH_EMAIL">Email</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© <span id="y"></span> Camilly Aoki · Cybersecurity Portfolio</small>
+    </footer>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
